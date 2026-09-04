@@ -1,16 +1,3 @@
-"""
-Translate BabyLM English data to Telugu using IndicTrans2.
-
-Covers all three splits:
-  - train: BabyLM-community/BabyLM-2026-Strict  (*.train.txt)
-  - dev:   BabyLM-community/BabyLM-dev           (*.dev)
-  - test:  BabyLM-community/BabyLM-Test          (*.test)
-
-Run: accelerate launch --num_processes 4 translate_telugu.py --split train
-     accelerate launch --num_processes 4 translate_telugu.py --split dev
-     accelerate launch --num_processes 4 translate_telugu.py --split test
-"""
-
 import math
 import logging
 import argparse

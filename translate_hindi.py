@@ -1,15 +1,3 @@
-"""
-Translate BabyLM English data to Hindi using IndicTrans2.
-
-Covers all three splits:
-  - train: BabyLM-community/BabyLM-2026-Strict  (*.train.txt)
-  - dev:   BabyLM-community/BabyLM-dev           (*.dev)
-  - test:  BabyLM-community/BabyLM-Test          (*.test)
-
-Run: accelerate launch --num_processes 4 translate_hindi.py --split train
-     accelerate launch --num_processes 4 translate_hindi.py --split dev
-     accelerate launch --num_processes 4 translate_hindi.py --split test
-"""
 
 import math
 import logging
